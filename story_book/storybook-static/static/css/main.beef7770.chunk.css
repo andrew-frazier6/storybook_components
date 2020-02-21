@@ -1,0 +1,49 @@
+button {
+  border-radius: 2px;
+  padding: 5px 25px;
+}
+
+.button-primary {
+  background-color: #0069d9;
+  color: white;
+  border: #0069d9;
+}
+
+.button-danger {
+  background-color: #cc2828;
+  color: white;
+  border: #cc2828;
+}
+
+.button-success {
+  background-color: #3bc91f;
+  color: white;
+  border: #3bc91f;
+}
+
+.button-warning {
+  background-color: #d4b817;
+  color: white;
+  border: #d4b817;
+}
+
+.button-default {
+  background-color: #000000;
+  color: white;
+  border: #000000;
+}
+
+.dark {
+}
+
+.white {
+}
+
+.opaque {
+}
+
+.big {
+}
+
+
+/*# sourceMappingURL=main.beef7770.chunk.css.map*/
