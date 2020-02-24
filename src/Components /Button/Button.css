@@ -5,42 +5,63 @@ button {
 
 .button-primary {
   background-color: #0069d9;
-  color: white;
-  border: #0069d9;
+  color: #0069d9;
+  border: #0069d9 solid 1px;
 }
 
 .button-danger {
   background-color: #cc2828;
-  color: white;
-  border: #cc2828;
+  color: #cc2828;
+  border: #cc2828 solid 1px;
 }
 
 .button-success {
   background-color: #3bc91f;
-  color: white;
-  border: #3bc91f;
+  color: #3bc91f;
+  border: #3bc91f solid 1px;
 }
 
 .button-warning {
   background-color: #d4b817;
-  color: white;
-  border: #d4b817;
+  color: #d4b817;
+  border: #d4b817 solid 1px;
 }
 
 .button-default {
-  background-color: #000000;
+  background-color: black;
+  color: black;
+  border: black solid 1px;
+}
+
+.button-dark {
+  filter: brightness(90%);
+}
+
+.button-opaque {
+  opacity: 0.3;
+}
+
+.button-big {
+  padding: 12px 35px;
+}
+
+.button-outline {
+  background-color: white;
+}
+
+.button-white {
   color: white;
-  border: #000000;
 }
 
-.dark {
+/* .button-heart {
+  background-image: url("hearts.png");
+  background-position: 5% 50%;
+  position: absolute;
+  background-repeat: no-repeat;
 }
-
-.white {
-}
-
-.opaque {
-}
-
-.big {
-}
+.button-cart {
+  background-image: url("cart_2.png");
+  background-position: 5% 50%;
+  position: absolute;
+  background-repeat: no-repeat;
+} */

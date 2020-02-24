@@ -1,0 +1,10 @@
+.counter {
+  display: flex;
+  flex-direction: row;
+  background-color: teal;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  height: 50px;
+  width: 125px;
+}
