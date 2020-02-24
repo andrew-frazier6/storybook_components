@@ -4,7 +4,7 @@ import "./Input.css";
 const Input = props => {
   let classList = "";
 
-  let types = ["Input"];
+  let types = ["Input", "voucher"];
 
   if (types.includes(props.type)) {
     classList += ` Input-${props.type}`;
@@ -14,7 +14,7 @@ const Input = props => {
     classList += ` Input-medium`;
   }
 
-  if (props.large) {
+  if (props.small) {
     classList += ` Input-small`;
   }
   return (
@@ -24,5 +24,4 @@ const Input = props => {
     </form>
   );
 };
-
 export default Input;
