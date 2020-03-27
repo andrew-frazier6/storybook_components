@@ -4,7 +4,7 @@ import "./Input.css";
 const Input = props => {
   let classList = "";
 
-  let types = ["Input", "voucher"];
+  let types = ["Input"];
 
   if (types.includes(props.type)) {
     classList += ` Input-${props.type}`;

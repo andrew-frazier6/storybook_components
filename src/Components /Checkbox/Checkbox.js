@@ -1,21 +1,24 @@
 import React from "react";
 import "./Checkbox.css";
 
-const Checkbox = props => {
-  let classList = "";
-
-  let types = ["Checkbox"];
-
-  if (types.includes(props.type)) {
-    classList += ` Checkbox-${props.type}`;
+class Checkbox extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      checked: this.props.check
+    };
   }
-  if (props.medium) {
-    classList += ` Checkbox-medium`;
+  render() {
+    return (
+      <label className="checkbox">
+        <input
+          className="check-blue"
+          type="checkbox"
+          checked={this.state.checked}
+        />
+      </label>
+    );
   }
-  return (
-    <div type="checkbox" checked="checked">
-      <div className="image"></div>
-    </div>
-  );
-};
+}
+
 export default Checkbox;
