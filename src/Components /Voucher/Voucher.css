@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Baloo+2&display=swap");
-
 .voucher-container {
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
-  font-family: "Baloo 2", cursive;
+  height: 26px;
 }
 
 .Voucher-medium {
