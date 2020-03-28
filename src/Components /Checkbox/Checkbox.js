@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Checkbox.stories";
-import "./Checkbox.css";
 import black_checked from "./Checkmark/black_checked.png";
 import blue_checked from "./Checkmark/blue_checked.png";
 import blue from "./Checkmark/blue.png";

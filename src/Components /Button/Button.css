@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+2&display=swap");
+
 button {
   border-radius: 2px;
   padding: 5px 25px;
+  font-family: "Baloo 2", cursive;
 }
 
 .button-primary {

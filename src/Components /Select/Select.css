@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+2&display=swap");
+
 .Select-css {
   appearance: none;
   background-color: white;
@@ -8,6 +10,7 @@
   height: 55px;
   width: 175px;
   padding: 2px;
+  font-family: "Baloo 2", cursive;
 }
 
 .Select-grey {

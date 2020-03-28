@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+2&display=swap");
+
 .counter {
   display: flex;
   flex-direction: row;
@@ -7,6 +9,7 @@
   height: 50px;
   width: 125px;
   border-radius: 5px;
+  font-family: "Baloo 2", cursive;
 }
 
 .counter > button {
