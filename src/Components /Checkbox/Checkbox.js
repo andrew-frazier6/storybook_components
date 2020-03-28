@@ -1,22 +1,39 @@
-import React from "react";
+import React, { Component } from "react";
+import "./Checkbox.stories";
 import "./Checkbox.css";
+import black_checked from "./Checkmark/black_checked.png";
+import blue_checked from "./Checkmark/blue_checked.png";
+import blue from "./Checkmark/blue.png";
+import black from "./Checkmark/black.png";
 
-class Checkbox extends React.Component {
+class Checkbox extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      checked: this.props.check
+      toggleCheck: false
     };
   }
+  changeCheck = e => {
+    e.preventDefault();
+    this.setState({ toggleCheck: !this.state.toggleCheck });
+  };
   render() {
     return (
-      <label className="checkbox">
-        <input
-          className="check-blue"
-          type="checkbox"
-          checked={this.state.checked}
-        />
-      </label>
+      <div className="checkbox" onClick={this.changeCheck}>
+        {this.state.toggleCheck ? (
+          <div className="checked">
+            <img
+              src={this.props.blue ? blue_checked : black_checked}
+              alt="checkbox"
+            />
+          </div>
+        ) : (
+          <div className="empty">
+            <img src={this.props.blue ? blue : black} alt="checkbox" />
+          </div>
+        )}
+        <label>{this.props.label}</label>
+      </div>
     );
   }
 }
