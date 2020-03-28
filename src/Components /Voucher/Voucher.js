@@ -1,5 +1,7 @@
 import React from "react";
 import "./Voucher.css";
+import Input from "../Input/Input";
+import Button from "../Button/Button";
 
 const Voucher = props => {
   let classList = "";
@@ -12,11 +14,17 @@ const Voucher = props => {
   if (props.medium) {
     classList += ` Voucher-medium`;
   }
+
   return (
     <form>
-      <div className="container">
-        <input placeholder="Voucher Code" className={classList}></input>
-        <label>{props.label}</label>
+      <div className="voucher-container">
+        <Input small style={{ height: props.medium ? "44px" : "" }} />
+        <Button
+          type="primary"
+          label={props.label}
+          white
+          style={{ height: props.medium ? "50px" : "" }}
+        />
       </div>
     </form>
   );

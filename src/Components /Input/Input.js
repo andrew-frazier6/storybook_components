@@ -20,7 +20,11 @@ const Input = props => {
   return (
     <form className="container">
       <label>{props.label}</label>
-      <input placeholder="Email" className={classList}></input>
+      <input
+        style={props.style}
+        placeholder={props.placeholder}
+        className={classList}
+      />
     </form>
   );
 };

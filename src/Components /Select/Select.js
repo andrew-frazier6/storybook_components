@@ -35,6 +35,7 @@ const Select = props => {
     <div>
       <select className={classList}>
         <option>Select</option>
+        {props.options && props.options.map(item => <option>{item}</option>)}
       </select>
     </div>
   );

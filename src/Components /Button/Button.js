@@ -51,7 +51,7 @@ const Button = props => {
 
   // Give the button's class a value of classList
   return (
-    <button className={classList} onClick={props.onClick}>
+    <button style={props.style} className={classList} onClick={props.onClick}>
       {props.label}
     </button>
   );
